@@ -1,6 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-export default function (plop) {
-  // controller generator
+module.exports = (plop) => {
   plop.setGenerator('component', {
     description: 'application component logic',
     prompts: [
@@ -20,6 +19,11 @@ export default function (plop) {
         type: 'add',
         path: '../src/components/{{lowerCase name}}/styles.tsx',
         templateFile: 'templates/styles.ts.hbs'
+      },
+      {
+        type: 'add',
+        path: '../src/components/{{lowerCase name}}/{{lowerCase name}}.stories.tsx',
+        templateFile: 'templates/stories.tsx.hbs'
       },
       {
         type: 'add',
