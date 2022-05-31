@@ -11,6 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <ThemeProvider theme={theme}>
       <Head>
         <title>Eduardo Lima</title>
+        <link rel="manifest" href="/manifest.json" />
         <meta
           name="description"
           content="Um blog sobre desenvolvimento de software e tecnologia da informação."
