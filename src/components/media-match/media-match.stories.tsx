@@ -16,3 +16,9 @@ export const Desktop: ComponentStory<typeof MediaMatch> = () => (
 export const Mobile: ComponentStory<typeof MediaMatch> = () => (
   <MediaMatch lessThan="medium">Only Mobile</MediaMatch>
 )
+
+Mobile.parameters = {
+  viewport: {
+    defaultViewport: 'iphone5'
+  }
+}

@@ -30,7 +30,7 @@ export default {
     background: '#fcfcfc',
     backgroundVariant: '#f0f0f3',
     cardHover: '#8cc8fe',
-    highlight: '#1d9bf0',
+    highlight: '#ff2e7d',
     danger: '#ff7782',
     success: '#41f1b6',
     warning: '#ffbb55',
@@ -40,7 +40,7 @@ export default {
     light: 'rgba(132, 139, 200, 0.18)',
     primaryVariant: '#f0f0f3',
     darkVariant: '#677483',
-    text: '#555555',
+    text: '#363949',
     border: '#dedede',
     socialLinks: '#363949',
     sunIcon: '#ef6c00'

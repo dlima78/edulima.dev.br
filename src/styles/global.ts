@@ -70,6 +70,8 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
+      margin: 0;
+      padding: 0;
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
       position: relative;

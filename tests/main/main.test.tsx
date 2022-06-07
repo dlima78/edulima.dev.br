@@ -15,10 +15,28 @@ describe('<Main />', () => {
     })
 
     expect(container.firstChild).toMatchInlineSnapshot(`
+      .c0 {
+        background-color: #363949;
+        color: #7380ec;
+        height: 100vh;
+        text-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+
       <main
-        class="sc-bczRLJ hgkctY"
+        class="c0"
       >
-        <h1>
+        <img
+          alt="Imagem de um atomo e react avançado escrito ao lado."
+          class=""
+          src="/img/logo.svg"
+        />
+        <h1
+          class=""
+        >
           React Avançado
         </h1>
       </main>
