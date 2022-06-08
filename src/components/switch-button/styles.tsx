@@ -13,8 +13,8 @@ export const CheckboxLabel = styled.label`
     align-items: center;
     justify-content: space-between;
     padding: 2px;
-    width: 46px;
-    height: 22px;
+    width: 42px;
+    height: 20px;
   `}
 `
 
@@ -25,8 +25,8 @@ export const Ball = styled.div`
     position: absolute;
     top: 2px;
     left: 2px;
-    height: 18px;
-    width: 18px;
+    height: 16px;
+    width: 16px;
 
     transform: translateX(0px);
     transition: transform 0.2s linear;
@@ -38,18 +38,18 @@ export const CheckboxInput = styled.input.attrs({ type: 'checkbox' })`
 
   &:checked + ${CheckboxLabel} {
     ${Ball} {
-      transform: translateX(25px);
+      transform: translateX(23px);
     }
   }
 `
 
 export const SunIcon = styled(LightMode)`
   color: #ef6c00;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
 `
 export const MoonIcon = styled(DarkMode)`
   color: #f0f0f3;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
 `

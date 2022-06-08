@@ -33,12 +33,18 @@ export const MenuBarMobile = styled.div`
     color: ${theme.colors.dark};
   `}
 `
-export const MenuNav = styled.div``
+export const MenuNav = styled.div`
+  flex: 1;
+  margin-left: 2rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`
 
 export const MenuLink = styled.a`
   ${({ theme }) => css`
     color: ${theme.colors.dark};
-    font-size: ${theme.font.sizes.medium};
 
     &:hover {
       color: ${theme.colors.highlight};
@@ -64,7 +70,20 @@ export const MenuHeadWrapper = styled.div`
     right: 0;
     padding: ${theme.spacings.xxsmall} ${theme.spacings.small};
     background-color: ${theme.colors.backgroundVariant};
+
+    @media (min-width: 786px) {
+      padding: ${theme.spacings.xxsmall} 20rem;
+    }
   `}
+`
+
+export const MenuSocialWrapper = styled.div`
+  width: 20rem;
+  margin-right: 2rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 type MenuFullProps = {

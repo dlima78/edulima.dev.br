@@ -5,15 +5,16 @@ export const Wrapper = styled.a`
     display: flex;
     align-items: center;
     color: ${theme.colors.text};
-    font-weight: 500;
   `}
 `
 export const Avatar = styled.div`
-  display: flex;
-  width: 5rem;
-  height: 5rem;
-  position: relative;
-  margin-right: 1rem;
+  ${({ theme }) => css`
+    display: flex;
+    width: ${theme.spacings.xlarge};
+    height: ${theme.spacings.xlarge};
+    position: relative;
+    margin-right: 1rem;
+  `}
 `
 
 export const AvatarPhoto = styled.img`
@@ -25,4 +26,8 @@ export const AvatarPhoto = styled.img`
   border-radius: 50%;
 `
 
-export const AvataName = styled.span``
+export const AvatarName = styled.h1`
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.medium};
+  `}
+`

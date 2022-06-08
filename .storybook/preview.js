@@ -19,8 +19,5 @@ export const parameters = {
   layout: 'fullscreen',
   viewport: {
     viewports: INITIAL_VIEWPORTS,
-  },
-  backgrounds: {
-    default: 'dark'
   }
 }

@@ -9,6 +9,7 @@ import { Home } from '@styled-icons/boxicons-solid/Home'
 import Profile from '@/components/profile'
 import MediaMatch from '@/components/media-match'
 import SwitchButton from '@/components/switch-button'
+import SocialLinks from '@/components/social-links'
 
 import * as S from './styles'
 
@@ -18,12 +19,13 @@ const Menu = () => {
     <S.Wrapper>
       <S.MenuHeadWrapper>
         <Profile />
-        <MediaMatch greaterThan="medium">
-          <S.MenuNav>
-            <S.MenuLink href="#">Home</S.MenuLink>
-            <S.MenuLink href="#">Sobre</S.MenuLink>
-          </S.MenuNav>
-        </MediaMatch>
+        <S.MenuNav>
+          <S.MenuLink href="#">Home</S.MenuLink>
+          <S.MenuLink href="#">Sobre</S.MenuLink>
+        </S.MenuNav>
+        <S.MenuSocialWrapper>
+          <SocialLinks />
+        </S.MenuSocialWrapper>
         <SwitchButton />
       </S.MenuHeadWrapper>
 
